@@ -228,12 +228,10 @@ speed_test(){
 print_china_speedtest() {
 	printf "%-18s%-18s%-20s%-12s\n" " Node Name" "Upload Speed" "Download Speed" "Latency" | tee -a $log
     speed_test '' 'Speedtest.net'
-    speed_test '3633'  'Shanghai     CT'
-	speed_test '29071' 'SiChuan 	 CT'
+	speed_test '29071' 'SiChuan      CT'
 	speed_test '5145'  'Beijing      CU'
 	speed_test '24447' 'Shanghai     CU'
-	speed_test '25637' 'Shanghai     CM'
-	speed_test '24337' 'ChengDu      CM'
+	speed_test '4575'  'ChengDu      CM'
 }
 
 print_global_speedtest() {
@@ -256,12 +254,10 @@ print_global_speedtest() {
 print_speedtest_fast() {
 	printf "%-18s%-18s%-20s%-12s\n" " Node Name" "Upload Speed" "Download Speed" "Latency" | tee -a $log
     speed_test '' 'Speedtest.net'
-    speed_test '3633'  'Shanghai     CT'
-	speed_test '29071' 'SiChuan 	 CT'
+	speed_test '29071' 'SiChuan      CT'
 	speed_test '5145'  'Beijing      CU'
 	speed_test '24447' 'Shanghai     CU'
-	speed_test '25637' 'Shanghai     CM'
-	speed_test '24337' 'ChengDu      CM'
+	speed_test '4575'  'ChengDu      CM'
 	 
 	rm -rf speedtest*
 }
